@@ -34,7 +34,7 @@ nav{
     color: white;
     font-family: "Ubuntu", sans-serif;
     margin: 24px 0px;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .box {
@@ -58,8 +58,8 @@ nav{
 /* image styling */
 .image {
     border-radius: 100px 60px 200px 100px;
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
 
     object-fit: cover;
 
@@ -122,17 +122,17 @@ nav{
 .name {
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     font-family: "Ubuntu", sans-serif;
 }
 
 .description {
-    color: rgb(184, 184, 184);
+    color: gray;
     text-align: center;
+    margin: 8px 0px;
 
     font-size: 1rem;
-    font-weight: 300;
     font-family: "Roboto", sans-serif;
 }
 
@@ -178,7 +178,8 @@ input[type="checkbox"]:checked + .heart {
     border-radius: 32px;
     color: white;
 
-    font-size: 20px;
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
 
     cursor: pointer;
@@ -188,4 +189,18 @@ input[type="checkbox"]:checked + .heart {
 
 .download-button:hover {
     box-shadow: 0 0 40px rgba(234, 0, 255, 0.7);
+}
+
+
+@media (min-width: 992px) {
+    .title{
+        font-size: 3.5rem;
+    }
+    .image{
+        height: 15rem;
+        width: 15rem;
+    }
+    .name{
+        font-size: 2rem;
+    }
 }
