@@ -34,14 +34,14 @@ nav{
     color: white;
     font-family: "Ubuntu", sans-serif;
     margin: 24px 0px;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .box {
     background-color: #3A3939;
     border-radius: 16px;
 
-    margin-top: 240px;
+    margin-top: 180px;
     padding: 100px 16px 40px;
     position: relative;
 
@@ -58,19 +58,14 @@ nav{
 /* image styling */
 .image {
     border-radius: 100px 60px 200px 100px;
-    width: 12rem;
-    height: 12rem;
+    width: 13rem;
+    height: 13rem;
 
     object-fit: cover;
 
     position: absolute;
-    top: -60%;
+    top: -45%;
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 50px rgb(0, 0, 0);
 }
 
 .spiderman-img{
@@ -122,7 +117,7 @@ nav{
 .name {
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 800;
     font-family: "Ubuntu", sans-serif;
 }
@@ -187,20 +182,36 @@ input[type="checkbox"]:checked + .heart {
     transition: box-shadow 0.3s;
 }
 
-.download-button:hover {
-    box-shadow: 0 0 40px rgba(234, 0, 255, 0.7);
-}
 
 
+/* for large screens */
 @media (min-width: 992px) {
     .title{
         font-size: 3.5rem;
     }
+
+    .box{
+        margin-top: 240px;
+    }
+
     .image{
         height: 15rem;
         width: 15rem;
+
+        top: -60%;
     }
+    
+    .image:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 50px rgb(0, 0, 0);
+    }
+
     .name{
         font-size: 2rem;
     }
+
+    .download-button:hover {
+        box-shadow: 0 0 40px rgba(234, 0, 255, 0.7);
+    }
+
 }
