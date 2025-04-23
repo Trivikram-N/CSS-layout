@@ -1,0 +1,190 @@
+
+
+/* Basic declarations */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #202020
+}
+
+
+
+/* layout decaration */
+nav{
+    padding: 0px 24px;
+}
+.container{
+    padding: 0px 24px 80px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+
+/* elements styling */
+.title {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    margin: 24px 0px;
+    font-size: 56px;
+}
+
+.box {
+    background-color: #3A3939;
+    border-radius: 16px;
+
+    margin-top: 240px;
+    padding: 100px 16px 40px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+
+
+/* image styling */
+.image {
+    border-radius: 100px 60px 200px 100px;
+    width: 240px;
+    height: 240px;
+
+    object-fit: cover;
+
+    position: absolute;
+    top: -60%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+.spiderman-img{
+    object-position: top;
+}
+
+.thor-img{
+    object-position: 0% 48%; 
+}
+
+.ironman-img{
+    object-position: 0% 8%;
+}
+
+.groot-img{
+    object-position: 0% 24%;
+}
+
+.captian-america-img{
+    object-position: 0% 16%;
+}
+
+.black-panther-img{
+    object-position: 0% 48%;
+}
+
+.hulk-img{
+    object-position: 0% 32%;
+}
+
+.loki-img{
+    object-position: 0% center;
+}
+
+.doctor-strange-img{
+    object-position: 0% 40%;
+}
+
+
+
+/* info styling */
+.info-div {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.description {
+    color: rgb(184, 184, 184);
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* buttons animation */
+.buttons-div{
+    display: flex;
+    align-items: center;
+}
+
+.like-div{
+    background-color: rgb(77, 77, 77);
+    height: 48px;
+    width: 48px;
+    margin-right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.heart {
+    color: gray;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .heart {
+    color: rgb(255, 0, 85);
+}
+
+
+.download-button {
+    padding: 16px 64px;
+    border: 0;
+    border-radius: 32px;
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff259d, #a51eff);
+    transition: box-shadow 0.3s;
+}
+
+.download-button:hover {
+    box-shadow: 0 0 40px rgba(234, 0, 255, 0.7);
+}
